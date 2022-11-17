@@ -1,0 +1,61 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color:navy;
+  background-image:url(img/fundo\ 4.jfif) ;
+cursor: url(img/cursor.cur),default;
+}
+.album{
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+gap: 2vw;
+padding: 2vw;
+cursor: url(img/cursor.cur);
+}
+
+.foto-album img{
+width:100% ;
+height: 100%;
+object-fit: cover;
+cursor: url(img/cursor.cur),default;
+}
+
+.foto-album{
+width: 340px;
+height: 340px;
+border: 10px solid black;
+box-shadow: 5px 5px 5px lightskyblue;
+flex-grow: 10px;
+transition: transform 1.5s;
+filter:hue-rotate(360deg)
+filter sepia(100px) contrast(200%) hue-rotate(200deg);
+cursor: url(img/cursor.cur);
+
+
+}
+.foto-album:hover{
+  transform: scale(1.1);
+  filter: blur(0);
+  filter:brightness(1);
+  border-radius: 10px;
+  cursor: url(img/cursor.cur);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
